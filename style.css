@@ -1,0 +1,749 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,600');
+
+body {
+    margin: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.navbar-menu>a {
+    font-family: Helvetica, sans-serif;
+    color: #1a2052;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.accueiltitle{
+    font-weight: 600;
+    font-size: 9vw;
+    color: white;
+    text-transform: uppercase;
+}
+
+.accueilsub{
+    font-weight: 300;
+    font-size: 3.5vw;
+}
+
+p .accueil{
+    margin: 0;
+    height: 27px;
+    font-size: 18px;
+    font-weight: normal;
+    color:#1a2052; 
+}
+
+
+.blue {
+    padding-top: 50px;
+    display: block;
+    margin: auto;
+    stroke:#1a2052;
+
+}
+
+.white {
+    padding-top: 50px;
+    display: block;
+    margin: auto;
+    stroke:#ffffff;
+}
+
+
+
+
+/* ----------- Mobile First -----------  */
+
+/* Navigation */
+
+.logo {
+    content: url(./images/logo-digitalarti-bleu-web-screen-72.png);
+    position: fixed;
+    z-index: 600;
+    top: 5px;
+}
+
+
+.navbar-menu {
+    position: fixed;
+    width: 100%;
+    max-width: 200px;
+    height: 100%;
+    background-color: whitesmoke;
+    top:0;
+    z-index: 300;
+    display: flex;
+    flex-direction:column;
+    padding-top: 200px;
+}
+.backdrop {
+    position: fixed;
+    top:0;
+    height: 100%;
+    width: 100%;
+    background:rgba(26, 32, 82, 0.8);
+    z-index: 280;
+}
+
+/* TO FIX */
+
+.navbar-menu>a {
+    padding: 10px;
+    margin-top: 25px;
+    margin-left: 21px;
+    border-right: 2px solid #1a2052;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.navbar-menu>a:hover{
+    color: #e78300;
+    border-right:  2px solid#e78300;
+}
+
+.vertical-menu {
+    position: fixed;
+    z-index:800;
+    top:0;
+    right: 0;
+    color: #1a2052;
+    display: flex;
+    flex-direction: column;
+    align-items: center
+
+}
+
+.vertical-menu > a:hover{
+    cursor: pointer;
+}
+
+.mobile-menu {
+    font-size: 29px;
+    text-align: center;
+    color: #1a2052;
+    height: 40px;
+    width: 40px;
+    background-color: white;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 15px;
+}
+
+.sns {
+    display:flex;
+    position:relative;
+    height: 50px;
+    width: 50px;
+    justify-content: center;
+}
+
+.sns:hover {
+    fill: #e78300;
+    stroke: #e78300;
+    color: rgba(0, 0, 0, 0.54);   
+}
+
+.hegaxon{
+    position:absolute;
+    top:0; left:0;
+    min-width:100%; min-height:100%;
+}
+
+.sns {
+    fill: white;
+    stroke: #1a2052
+}
+
+
+.sns > i {
+    z-index: 1000;
+    position: relative;
+    left: 0px;
+    top:16px;
+
+}
+
+a .sns {
+    padding: 15px;
+}
+
+
+figure {
+    margin: 0;
+    height: 46vw;
+}
+
+/* Header */
+figure>img {
+    width: 100%;
+    height: auto;    
+}
+
+figure figcaption {
+    position: relative;
+    top: -36vw;
+    text-align: center;
+    color: white;
+    display:block;
+}
+
+.accueil {
+    display: flex;
+    height: 50px; 
+    background: url(./images/imported-layers-2.svg) no-repeat;
+    background-position: left 0 bottom 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.accueil > p {
+    margin: 0;
+     
+}
+
+
+       /* NOS SERVICES */
+
+
+       .services {
+        background: #f5f5f5;
+        padding-top: 49px;
+        padding-bottom: 50px;
+    }
+
+    .card > .element {
+        padding: 10px;
+    }
+
+    /* INFOS */
+
+
+    .info {
+       
+        padding-top: 49px;
+        padding-bottom: 50px;
+        background: url(./images/aeroport-paris-cdg-oeuvre-sur-natures-de-miguel-chevalier.jpg) no-repeat;
+        background-position: left 0 bottom 0;
+        mix-blend-mode: multiply;
+        background: rgb(26,32,82,1);
+    }
+
+    .card > .element {
+        padding: 10px;
+    }
+    .info > img {
+        -webkit-filter: invert(1);
+        filter: invert(1);
+    }
+
+    .info > p {
+        text-align: center;
+    }
+    
+    /* ACTU*/
+    .actualite {
+        background: #f5f5f5;
+        padding-top: 49px;
+        padding-bottom: 50px;
+    }
+
+    .tile {
+        display: grid;
+        grid-template-columns: auto 170px;
+        grid-template-rows: auto 182px;
+
+        margin: 10px;
+        background-color: #ffffff;
+        max-height: 222px;
+    }
+
+    .tile > h3 {
+        padding-left: 10px;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 1;
+
+        text-align: left;
+
+    }
+    .tile > p {
+        padding-left: 10px;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+       }
+
+    .tile > img {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+
+    /* productions */
+
+
+    .productions {
+        background: #1a2052;
+        padding-top: 49px;
+        padding-bottom: 50px;
+    }
+
+
+    .card > .element {
+        padding: 10px;
+    }
+
+
+    .productions-img {
+        width: 95%;
+        height: auto;
+        border: solid 5px #ffffff;
+    }
+
+
+    /* ARTLAB */
+
+    .artlab-img {
+        position: relative;
+        width: 100%;
+        height: auto;
+        -webkit-clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);
+        clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);
+    }
+
+    .artlab > .card > .tile >h3 {
+        text-align: center;
+    }
+    .artlab > .card  {
+        display: flex;
+        justify-content:space-evenly;
+        flex-direction: column;
+        padding-bottom: 80px;
+        
+    }
+    .artlab > .card > .tile {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    /* FOOTER */
+
+    footer {
+        width: 100%;
+        min-height: 285px;
+        background-color: #212121;
+        display: flex;
+        flex-direction: column;
+        color: white;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    
+
+    .contact {
+        padding: 20px;
+        display: grid;
+        grid-template-columns: 50px auto;
+        grid-template-rows: 41px 41px 41px 41px; 
+        grid-column-gap: 18px;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+
+    .contact > .sns-list {
+        grid-column-start: 1;
+        grid-row-start: 1;
+        grid-row-end: 5;
+        border-right: #ffffff 1px solid;
+        text-align: center;
+        height: 100%;
+        width: 100%;
+        display: inline-flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        font-size: 20px;
+    }
+
+    .contact > .cities-list {
+        grid-column-start: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        border-bottom: #ffffff 1px solid;
+        font-size: 12.8px;
+        display: inline-flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .contact > .contact-list {
+        grid-column-start: 2;
+        grid-row-start: 3;
+        border-bottom: #ffffff 1px solid;
+        font-size: 12.8px;
+        display: inline-flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .contact > h2 {
+        grid-column-start: 2;
+        grid-row-start: 1;
+        border-bottom: #ffffff 1px solid;
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 1.64;
+        text-align: left;
+        display:table-cell;
+    }
+
+    .contact > h3 {
+        display:table-cell;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 4;
+        grid-row-end: 4;
+        font-weight: 300;
+        line-height: 1.64;
+        text-align: left;
+        margin: 0;
+    }
+
+
+
+    .newsletter{
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .newsletter > h2 {
+        height: 42px;
+        border-bottom: #ffffff 1px solid;
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 1.64;
+        text-align: left;
+        display:table-cell;
+    }
+
+    .newsletter > form {
+        display: inline-flex;
+    }
+
+    input[type="text"] {
+        width: 100%;
+        height: 26px;
+        background: #212121;
+        border: solid white 1px;
+        color: white;
+    }
+    
+    input[type="submit"] {
+        width: 75px;
+        height: 30px;
+        color: #212121;
+        border: 0;
+        -webkit-appearance: none;
+
+
+        background-color: #ffffff;
+    }
+
+    input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: #ffffff;
+        opacity: 1; /* Firefox */
+        font-size: 14px;
+        font-family: 'Source Sans Pro', sans-serif;
+    }
+    
+    input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+        color: #ffffff;  
+        font-size: 14px;
+        font-family: 'Source Sans Pro', sans-serif;
+    }
+    
+    input::-ms-input-placeholder { /* Microsoft Edge */
+        color: #ffffff;
+        font-size: 14px;
+        font-family: 'Source Sans Pro', sans-serif;
+    }
+
+    .logo-invert {
+        align-self: center;
+        padding-top: 30px;
+        width: 25%;
+        display: flex;
+        flex-direction: column;
+        align-items: center
+    }
+    footer > p {
+        width: 100%;
+        text-align: center;
+        
+    }
+
+
+
+
+/* ----------- Desktop view -----------  */
+@media screen and (min-width: 734px) {
+
+    .accueiltitle {
+        font-size: 5vw;
+    }
+    
+    .accueilsub {
+        font-size: 2vw;
+    }
+
+    figure figcaption {
+        top: -25vw;
+    }
+
+    .card {
+        display:flex;
+        justify-content: space-evenly;
+        padding-right: 90px;
+        padding-left: 90px;
+    }
+
+
+    /* Navigation */
+    nav {
+        height: 250px;
+        max-width: 1300px;
+        background: url(./images/imported-layers.svg) no-repeat;
+        background-position: right 48px bottom 0;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 218px 30px;
+    }
+    
+    .logo {
+        content: url(./images/logo-digitalarti-bleu-web-screen-72.png);
+        position: unset;
+        display: inline-flex;
+        grid-column-start: 1;
+        grid-row-start: 1;
+        align-self: end;
+
+    }
+
+    .mobile-menu {
+        display: none;
+    }
+
+    .navbar-menu {
+        justify-self: end;   
+        padding-right: 19px;
+        position: static;
+        max-width: 100%;
+        display: block;
+        background-color: white;
+        align-self: end;
+        width: auto;
+        padding-top: 0px;
+    }
+
+
+
+    
+    .navbar-menu>a {
+        grid-column-start: 1;
+        grid-row-start: 2;
+        display: inline-flex;
+        width: 122px;
+        height: 28px;
+        margin-right: 21px;
+        border-bottom: 2px solid #1a2052;
+        border-right: none;
+        justify-content: center;
+        cursor: pointer;
+        padding: 0;
+        margin-top: 0;
+        margin-left: 0;
+    }
+
+    
+    .navbar-menu>a:hover{
+        color: #e78300;
+        border-bottom:  2px solid#e78300;
+        border-right: none;
+    }
+
+    .sns > i {
+        z-index: 1000;
+        position: relative;
+        left: 18px;
+        top:15px;
+    }
+ 
+    .artlab > .card  {
+        display: flex;
+        justify-content:space-evenly;
+        flex-direction: row;
+        padding-bottom: 80px;
+        
+    }
+
+    footer {
+        flex-direction: row;
+    }
+
+    .contact {
+        max-width: 40%;
+    }
+
+    .newsletter{
+        width: 25%;
+    }
+
+    .logo-invert {
+        width: 25%;
+    }
+
+    /* Fix for middle size */
+    @media screen and (min-width: 1000px) {
+        .navbar-menu {
+        padding-right: 90px;
+        }
+        .logo {
+            padding-left: 127px;
+        }
+    }
+}
+
+h2 {
+    text-transform: uppercase;
+    font-size: 24px;
+    text-align: center;
+    margin: 0px;
+}
+
+h3 {    
+    font-size: 20px;
+    text-align: center;
+}
+
+h4 {
+    font-size: 16px;
+    text-align: center;
+}
+
+p {
+    font-size: 14px; 
+}
+
+img {
+    display: block;
+    margin: 0 auto;   
+}
+
+.services h2,  .services h3, .services h4, .artlab h2, .artlab h3, .artlab p {
+    color: #1a2052;
+}
+
+
+.services p {
+    color: #212121;
+}
+
+.info h2,  .info h3, .info h4 {
+    color: #f5f5f5;
+}
+
+
+.info p {
+    color: #f5f5f5;
+}
+.info > p {
+      width: 40%;
+        text-align: center;
+        padding-left: 30%
+}
+
+.productions h2,  .productions h3, .productions h4 {
+    color: #f5f5f5;
+}
+
+
+.productions p {
+    color: #f5f5f5;
+}
+
+/* DIVERS */
+.isHidden {
+    display: none; 
+}
+
+@media screen and (min-width: 734px) {
+    .menuState {
+        display: block;
+    }
+    .backdrop {
+        display: none;
+    }
+}
+
+/* FIX P SMALL SIZE */
+@media screen and (max-width: 1037px) and (min-width: 734px) {
+    .tile > p {
+        margin-top: 0;
+        overflow: hidden;
+        position: relative; 
+        line-height: 1.2em;
+        max-height: 3.6em; 
+        text-align: justify;  
+        padding-right: 1em;
+      }
+      .tile > p:before {
+        content: '...';
+        position: absolute;
+        right: 0;
+        bottom: 0;
+      }
+      .tile > p:after {
+        content: '';
+        position: absolute;
+        right: 0;
+        width: 1em;
+        height: 1em;
+        margin-top: 0.2em;
+      }
+}
+
+@media screen and (max-width: 434px) {
+    .tile > p {
+        margin-top: 0;
+        overflow: hidden;
+        position: relative; 
+        line-height: 1.2em;
+        max-height: 2.4em; 
+        text-align: justify;  
+        padding-right: 1em;
+      }
+      .tile > p:before {
+        content: '...';
+        position: absolute;
+        right: 0;
+        bottom: 0;
+      }
+      .tile > p:after {
+        content: '';
+        position: absolute;
+        right: 0;
+        width: 1em;
+        height: 1em;
+        margin-top: 0.2em;
+      }
+}
+
+
